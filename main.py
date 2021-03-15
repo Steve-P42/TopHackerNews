@@ -8,7 +8,6 @@
 # %%
 import requests
 from bs4 import BeautifulSoup
-import pprint
 
 # %%
 class TopHackerNews:
@@ -49,8 +48,17 @@ class TopHackerNews:
 
 
     def return_pretty_result(self):
-        pprint.pprint(self.result)
-        print(self.counter)
+
+        for element in self.result:
+            print(f"""
+            Title:   {element['title']}
+            Upvotes: {element['votes']}
+            Link:    {element['link']}
+            """)
+
+        print(f'{len(self.result)} out of {self.counter} stories received 100 or more upvotes.')
+
+
 
 # %%
 
