@@ -71,11 +71,15 @@ x = TopHackerNews()
 
 x.return_pretty_result()
 
-# %%
-#todo create an exe
+input()
 
 # %%
 
+
+# %% todo make links clickable
+#import webbrowser
+
+#webbrowser.open('https://github.com/Steve-P42')
 # %%
 
 # %%
