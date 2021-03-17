@@ -53,11 +53,15 @@ class TopHackerNews:
 
     def return_pretty_result(self):
         """this method presents the top-voted stories in a human-readable format"""
+        count = 1
         for element in self.result:
             print(f"""
+            Story #  {count}:
             Title:   {element['title']}
             Upvotes: {element['votes']}
             Link:    {element['link']}""")
+
+            count += 1
 
         print(f"""
             ({len(self.result)} out of {self.counter} stories received 100 or more upvotes.)""")
@@ -69,9 +73,12 @@ class TopHackerNews:
 
 x = TopHackerNews()
 
+loop = 'hi'
+
 x.return_pretty_result()
 
-input()
+while loop != 'exit':
+    loop = input()
 
 # %%
 
