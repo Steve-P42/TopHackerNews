@@ -73,21 +73,58 @@ class TopHackerNews:
 
 x = TopHackerNews()
 
-loop = 'hi'
-
-x.return_pretty_result()
-
-while loop != 'exit':
-    loop = input()
+# loop = 'hi'
+#
+# x.return_pretty_result()
+#
+# while loop != 'exit':
+#     loop = input()
 
 # %%
 
 
-# %% todo make links clickable
-#import webbrowser
-
-#webbrowser.open('https://github.com/Steve-P42')
 # %%
+import webbrowser
+
+with open("test.html", "w") as f:
+    count = 1
+
+    f.write("""<html> 
+            <head> 
+            <title>Hackernews</title> 
+            </head>
+             
+            <body> 
+            <h2>These are the most upvoted Hackernews stories</h2> 
+            <p>
+            """)
+
+    for element in x.result:
+        f.write(f"""
+        Story # {count}: {element['title']}
+        <br>
+        Upvotes: {element['votes']} Link: {element['link']}
+        <br>
+        """)
+
+        count += 1
+
+    f.write(f"""
+            </p>
+            <p>
+            ({len(x.result)} out of {x.counter} stories received 100 or more upvotes.)
+            </p>
+            </body> 
+            </html>
+            """)
+
+    #     f.write('''
+    #     <ul>
+    #   <li><a href="https://python-forum.io">The best Python forum</a></li>
+    #   <li><a href=https://google.com>Google</a></li>
+    # </ul>''')
+
+webbrowser.open('test.html')
 
 # %%
 
