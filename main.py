@@ -8,6 +8,8 @@
 # %%
 import requests
 from bs4 import BeautifulSoup
+from time import gmtime, strftime
+import webbrowser
 
 
 # %%
@@ -66,65 +68,56 @@ class TopHackerNews:
         print(f"""
             ({len(self.result)} out of {self.counter} stories received 100 or more upvotes.)""")
 
+    def return_as_html(self):
+        with open("hnews.html", "w") as f:
+            count = 1
+
+            f.write(f"""<html> 
+                    <head> 
+                    <title>Hackernews</title> 
+                    </head>
+
+                    <body> 
+                    <h2>Most upvoted Hackernews - Stories on {strftime("%d.%m.%Y %H:%M:%S", gmtime())} GMT</h2> 
+                    <p>
+                    """)
+
+            for element in self.result:
+                f.write(f'''
+                <ul>
+                <li>Story # {count}: {element['title']}</li>
+                <br>
+                <li>Upvotes: {element['votes']} Link: <a href="{element['link']}">{element['link']}</a></li>
+                <br>
+                </ul>
+                ''')
+
+                count += 1
+
+            f.write(f"""
+                    </p>
+                    <p>
+                    ({len(self.result)} out of {self.counter} stories received 100 or more upvotes.)
+                    </p>
+                    </body> 
+                    </html>
+                    """)
+
+        webbrowser.open('test.html')
 
 
 # %%
 
-
 x = TopHackerNews()
 
+x.return_as_html()
+
 # loop = 'hi'
-#
 # x.return_pretty_result()
-#
 # while loop != 'exit':
 #     loop = input()
 
 # %%
-
-
-# %%
-import webbrowser
-
-with open("test.html", "w") as f:
-    count = 1
-
-    f.write("""<html> 
-            <head> 
-            <title>Hackernews</title> 
-            </head>
-             
-            <body> 
-            <h2>These are the most upvoted Hackernews stories</h2> 
-            <p>
-            """)
-
-    for element in x.result:
-        f.write(f"""
-        Story # {count}: {element['title']}
-        <br>
-        Upvotes: {element['votes']} Link: {element['link']}
-        <br>
-        """)
-
-        count += 1
-
-    f.write(f"""
-            </p>
-            <p>
-            ({len(x.result)} out of {x.counter} stories received 100 or more upvotes.)
-            </p>
-            </body> 
-            </html>
-            """)
-
-    #     f.write('''
-    #     <ul>
-    #   <li><a href="https://python-forum.io">The best Python forum</a></li>
-    #   <li><a href=https://google.com>Google</a></li>
-    # </ul>''')
-
-webbrowser.open('test.html')
 
 # %%
 
