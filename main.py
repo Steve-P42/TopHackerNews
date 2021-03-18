@@ -74,11 +74,11 @@ class TopHackerNews:
 
             f.write(f"""<html> 
                     <head> 
-                    <title>Hackernews</title> 
+                    <title>HackerNews</title> 
                     </head>
 
                     <body> 
-                    <h2>Most upvoted Hackernews - Stories on {strftime("%d.%m.%Y %H:%M:%S", gmtime())} GMT</h2> 
+                    <h2>Most upvoted HackerNews - Stories on {strftime("%d.%m.%Y %H:%M:%S", gmtime())} GMT</h2> 
                     <p>
                     """)
 
@@ -103,7 +103,7 @@ class TopHackerNews:
                     </html>
                     """)
 
-        webbrowser.open('test.html')
+        webbrowser.open('hnews.html')
 
 
 # %%
