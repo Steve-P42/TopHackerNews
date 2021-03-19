@@ -10,24 +10,40 @@ import requests
 from bs4 import BeautifulSoup
 from time import gmtime, strftime
 import webbrowser
+from time import sleep
 
 
 # %%
 class TopHackerNews:
-    def __init__(self):
-        self.source = ['https://news.ycombinator.com/news', 'https://news.ycombinator.com/news?p=2']
+    def __init__(self, page_num=1):
+        self.source = ['https://news.ycombinator.com/news', 'https://news.ycombinator.com/news?p=2',
+                       'https://news.ycombinator.com/news?p=3', 'https://news.ycombinator.com/news?p=4',
+                       'https://news.ycombinator.com/news?p=5']
+        self.page_number = page_num
         self.page_contents = self.get_page_contents()
         self.links = self.page_contents.select('.storylink')
         self.subtext = self.page_contents.select('.subtext')
         self.counter = 0
         self.result = self.create_custom_hackernews(self.links, self.subtext)
 
-#todo add possibility to give the number of pages to scrape
     def get_page_contents(self):
         """scrape the ycombinator page"""
         res1 = requests.get(self.source[0])
         res2 = requests.get(self.source[1])
-        soup = BeautifulSoup(res1.text + res2.text, "html.parser")
+        res3 = requests.get(self.source[2])
+        res4 = requests.get(self.source[3])
+        res5 = requests.get(self.source[4])
+
+        if self.page_number == 1:
+            soup = BeautifulSoup(res1.text, "html.parser")
+        elif self.page_number == 2:
+            soup = BeautifulSoup(res1.text + res2.text, "html.parser")
+        elif self.page_number == 3:
+            soup = BeautifulSoup(res1.text + res2.text + res3.text, "html.parser")
+        elif self.page_number == 4:
+            soup = BeautifulSoup(res1.text + res2.text + res3.text + res4.text, "html.parser")
+        else:
+            soup = BeautifulSoup(res1.text + res2.text + res3.text + res4.text + res5.text, "html.parser")
 
         return soup
 
@@ -51,7 +67,6 @@ class TopHackerNews:
             self.counter += 1
 
         return self.sort_stories_by_votes(hn)
-
 
     def return_pretty_result(self):
         """this method presents the top-voted stories in a human-readable format"""
@@ -107,8 +122,21 @@ class TopHackerNews:
 
 
 # %%
+check = False
+while not check:
+    try:
+        p = int(input('How many pages do you want to scrape? (1-5)'))
+        if p in [1, 2, 3, 4, 5]:
+            check = True
+        else:
+            print('Only numbers between 1-5 are allowed.')
+    except ValueError:
+        print('Only numbers between 1-5 are allowed.')
+        pass
+print('Browser opens shortly.')
+sleep(3)
 
-x = TopHackerNews()
+x = TopHackerNews(p)
 
 x.return_as_html()
 
