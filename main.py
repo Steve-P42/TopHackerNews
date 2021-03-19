@@ -11,7 +11,9 @@ from bs4 import BeautifulSoup
 from time import gmtime, strftime
 import webbrowser
 from time import sleep
+import ctypes
 import os
+
 
 # %%
 class TopHackerNews:
@@ -122,10 +124,11 @@ class TopHackerNews:
 
 
 # %%
+p = 1
 check = False
 while not check:
     try:
-        p = int(input('How many pages do you want to scrape? (1-5)'))
+        p = int(input('How many pages do you want to scrape? (1-5)\nPage number: '))
         if p in [1, 2, 3, 4, 5]:
             check = True
         else:
@@ -133,22 +136,22 @@ while not check:
     except ValueError:
         print('Only numbers between 1-5 are allowed.')
         pass
-print('Browser opens shortly.')
 
+# for closing the cmd window when using the executable
+ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 6)
+
+# inform the user about the successful operation
+print('Browser opens shortly.')
+sleep(2)
+
+# create the class with number of pages to scrape as input p
 x = TopHackerNews(p)
 
+# show results in the browser
 x.return_as_html()
 
-sleep(5)
+# removing the custom hnews html file
+sleep(3)
 os.remove("hnews.html")
-
-# loop = 'hi'
-# x.return_pretty_result()
-# while loop != 'exit':
-#     loop = input()
-
-# %%
-
-# %%
 
 # %%
