@@ -137,12 +137,13 @@ while not check:
         print('Only numbers between 1-5 are allowed.')
         pass
 
-# for closing the cmd window when using the executable
-ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 6)
-
 # inform the user about the successful operation
 print('Browser opens shortly.')
 sleep(2)
+
+# for closing the cmd window when using the executable
+ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 6)
+# *
 
 # create the class with number of pages to scrape as input p
 x = TopHackerNews(p)
@@ -154,4 +155,5 @@ x.return_as_html()
 sleep(3)
 os.remove("hnews.html")
 
-# %%
+# %% LINKS
+# * https://stackoverflow.com/questions/5245520/is-it-possible-to-minimize-the-console-in-python-with-the-standard-librairy-wit
