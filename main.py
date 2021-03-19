@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 from time import gmtime, strftime
 import webbrowser
 from time import sleep
-
+import os
 
 # %%
 class TopHackerNews:
@@ -134,11 +134,13 @@ while not check:
         print('Only numbers between 1-5 are allowed.')
         pass
 print('Browser opens shortly.')
-sleep(3)
 
 x = TopHackerNews(p)
 
 x.return_as_html()
+
+sleep(5)
+os.remove("hnews.html")
 
 # loop = 'hi'
 # x.return_pretty_result()
