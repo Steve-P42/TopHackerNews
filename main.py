@@ -95,7 +95,7 @@ class TopHackerNews:
                     </head>
 
                     <body> 
-                    <h2>Most upvoted HackerNews - Stories on {strftime("%d.%m.%Y %H:%M:%S", gmtime())} GMT</h2> 
+                    <h2>Most upvoted HackerNews - Stories - {strftime("%d.%m.%Y %H:%M:%S", gmtime())} GMT</h2> 
                     <p>
                     """)
 
@@ -104,7 +104,7 @@ class TopHackerNews:
                 <ul>
                 <li>Story # {count}: {element['title']}</li>
                 <br>
-                <li>Upvotes: {element['votes']} Link: <a href="{element['link']}">{element['link']}</a></li>
+                <li>Upvotes: {element['votes']} &nbsp;>>>&nbsp; Link: <a href="{element['link']}">{element['link']}</a></li>
                 <br>
                 </ul>
                 ''')
@@ -124,18 +124,19 @@ class TopHackerNews:
 
 
 # %%
-p = 1
-check = False
-while not check:
-    try:
-        p = int(input('How many pages do you want to scrape? (1-5)\nPage number: '))
-        if p in [1, 2, 3, 4, 5]:
-            check = True
-        else:
-            print('Only numbers between 1-5 are allowed.')
-    except ValueError:
-        print('Only numbers between 1-5 are allowed.')
-        pass
+p = 5
+# p = 1
+# check = False
+# while not check:
+#     try:
+#         p = int(input('How many pages do you want to scrape? (1-5)\nPage number: '))
+#         if p in [1, 2, 3, 4, 5]:
+#             check = True
+#         else:
+#             print('Only numbers between 1-5 are allowed.')
+#     except ValueError:
+#         print('Only numbers between 1-5 are allowed.')
+#         pass
 
 # inform the user about the successful operation
 print('Browser opens shortly.')

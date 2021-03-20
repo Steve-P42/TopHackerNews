@@ -45,6 +45,19 @@
   ('_socket', 'C:\\Python\\Python39\\DLLs\\_socket.pyd', 'EXTENSION'),
   ('_ssl', 'C:\\Python\\Python39\\DLLs\\_ssl.pyd', 'EXTENSION'),
   ('_ctypes', 'C:\\Python\\Python39\\DLLs\\_ctypes.pyd', 'EXTENSION'),
+  ('python39.dll', 'C:\\Python\\Python39\\python39.dll', 'BINARY'),
+  ('api-ms-win-crt-heap-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-crt-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-locale-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-crt-locale-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-runtime-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-crt-runtime-l1-1-0.dll',
+   'BINARY'),
   ('api-ms-win-crt-stdio-l1-1-0.dll',
    'C:\\Program Files\\MiKTeX '
    '2.9\\miktex\\bin\\x64\\api-ms-win-crt-stdio-l1-1-0.dll',
@@ -54,42 +67,30 @@
    '2.9\\miktex\\bin\\x64\\api-ms-win-crt-convert-l1-1-0.dll',
    'BINARY'),
   ('VCRUNTIME140.dll', 'C:\\Python\\Python39\\VCRUNTIME140.dll', 'BINARY'),
-  ('api-ms-win-crt-locale-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-crt-locale-l1-1-0.dll',
-   'BINARY'),
-  ('python39.dll', 'C:\\Python\\Python39\\python39.dll', 'BINARY'),
   ('api-ms-win-crt-string-l1-1-0.dll',
    'C:\\Program Files\\MiKTeX '
    '2.9\\miktex\\bin\\x64\\api-ms-win-crt-string-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-crt-heap-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-crt-heap-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-crt-runtime-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-crt-runtime-l1-1-0.dll',
    'BINARY'),
   ('api-ms-win-crt-math-l1-1-0.dll',
    'C:\\Program Files\\MiKTeX '
    '2.9\\miktex\\bin\\x64\\api-ms-win-crt-math-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-crt-utility-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-crt-utility-l1-1-0.dll',
-   'BINARY'),
   ('api-ms-win-crt-environment-l1-1-0.dll',
    'C:\\Program Files\\MiKTeX '
    '2.9\\miktex\\bin\\x64\\api-ms-win-crt-environment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-utility-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-crt-utility-l1-1-0.dll',
    'BINARY'),
   ('libcrypto-1_1.dll',
    'C:\\Python\\Python39\\DLLs\\libcrypto-1_1.dll',
    'BINARY'),
   ('libssl-1_1.dll', 'C:\\Python\\Python39\\DLLs\\libssl-1_1.dll', 'BINARY'),
   ('libffi-7.dll', 'C:\\Python\\Python39\\DLLs\\libffi-7.dll', 'BINARY'),
-  ('ucrtbase.dll',
-   'C:\\Program Files\\MiKTeX 2.9\\miktex\\bin\\x64\\ucrtbase.dll',
+  ('api-ms-win-crt-conio-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-crt-conio-l1-1-0.dll',
    'BINARY'),
   ('api-ms-win-crt-time-l1-1-0.dll',
    'C:\\Program Files\\MiKTeX '
@@ -99,121 +100,120 @@
    'C:\\Program Files\\MiKTeX '
    '2.9\\miktex\\bin\\x64\\api-ms-win-crt-filesystem-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-crt-conio-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-crt-conio-l1-1-0.dll',
-   'BINARY'),
   ('api-ms-win-crt-process-l1-1-0.dll',
    'C:\\Program Files\\MiKTeX '
    '2.9\\miktex\\bin\\x64\\api-ms-win-crt-process-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-core-libraryloader-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-libraryloader-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-debug-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-debug-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-file-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-file-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-timezone-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-timezone-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-handle-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-handle-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-file-l2-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-file-l2-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-datetime-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-datetime-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-string-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-string-l1-1-0.dll',
+  ('ucrtbase.dll',
+   'C:\\Program Files\\MiKTeX 2.9\\miktex\\bin\\x64\\ucrtbase.dll',
    'BINARY'),
   ('api-ms-win-core-errorhandling-l1-1-0.dll',
    'C:\\Program Files\\MiKTeX '
    '2.9\\miktex\\bin\\x64\\api-ms-win-core-errorhandling-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-core-processthreads-l1-1-1.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-processthreads-l1-1-1.dll',
-   'BINARY'),
-  ('api-ms-win-core-console-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-console-l1-1-0.dll',
-   'BINARY'),
   ('api-ms-win-core-processenvironment-l1-1-0.dll',
    'C:\\Program Files\\MiKTeX '
    '2.9\\miktex\\bin\\x64\\api-ms-win-core-processenvironment-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-core-sysinfo-l1-1-0.dll',
+  ('api-ms-win-core-string-l1-1-0.dll',
    'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-sysinfo-l1-1-0.dll',
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-string-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
+  ('api-ms-win-core-libraryloader-l1-1-0.dll',
    'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-rtlsupport-l1-1-0.dll',
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-libraryloader-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-core-memory-l1-1-0.dll',
+  ('api-ms-win-core-datetime-l1-1-0.dll',
    'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-memory-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-profile-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-profile-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-processthreads-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-processthreads-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-synch-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-synch-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-heap-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-heap-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-interlocked-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-interlocked-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-file-l1-2-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-file-l1-2-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-synch-l1-2-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-synch-l1-2-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-localization-l1-2-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-localization-l1-2-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-util-l1-1-0.dll',
-   'C:\\Program Files\\MiKTeX '
-   '2.9\\miktex\\bin\\x64\\api-ms-win-core-util-l1-1-0.dll',
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-datetime-l1-1-0.dll',
    'BINARY'),
   ('api-ms-win-core-namedpipe-l1-1-0.dll',
    'C:\\Program Files\\MiKTeX '
    '2.9\\miktex\\bin\\x64\\api-ms-win-core-namedpipe-l1-1-0.dll',
    'BINARY'),
+  ('api-ms-win-core-console-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-console-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-2-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-file-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-1.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-processthreads-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-memory-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-memory-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-heap-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-2-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-synch-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-util-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-util-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-processthreads-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-sysinfo-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-sysinfo-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-debug-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-debug-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-synch-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-profile-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-profile-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-file-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-handle-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-handle-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-timezone-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-timezone-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l2-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-file-l2-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-localization-l1-2-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-localization-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-interlocked-l1-1-0.dll',
+   'C:\\Program Files\\MiKTeX '
+   '2.9\\miktex\\bin\\x64\\api-ms-win-core-interlocked-l1-1-0.dll',
+   'BINARY'),
   ('base_library.zip',
    'D:\\Data\\GitHub\\TopHackerNews\\build\\main\\base_library.zip',
    'DATA'),
-  ('Include\\pyconfig.h', 'C:\\Python\\Python39\\Include\\pyconfig.h', 'DATA'),
   ('certifi\\cacert.pem',
    'd:\\data\\github\\tophackernews\\venv\\lib\\site-packages\\certifi\\cacert.pem',
    'DATA'),
+  ('Include\\pyconfig.h', 'C:\\Python\\Python39\\Include\\pyconfig.h', 'DATA'),
   ('main.exe.manifest',
    'D:\\Data\\GitHub\\TopHackerNews\\build\\main\\main.exe.manifest',
    'BINARY'),
